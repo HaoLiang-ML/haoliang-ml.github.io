@@ -15,7 +15,7 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Buenard&family=Raleway:wght@400;700&display=swap');
   header {
-    padding: 1em;
+    padding: 1em 0 0.8em;
     clear: left;
     text-align: center;
   }
@@ -28,9 +28,10 @@
     border-right: 0px;
     border-top: 1px solid #007155;
     border-bottom: 1px solid #007155;
+    opacity: 0.14;
   }
   a {
-    color: #222222;
+    color: #1d2f2a;
     text-decoration: none;
   }
   a:hover {
@@ -59,83 +60,95 @@
   }
   body {
     -webkit-text-size-adjust: 100%;
-    background-color: #F7F7F7;
-    color: #2b2b2b;
+    background-color: #f7f7f5;
+    color: #1f1f1f;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     padding-bottom: 75px;
   }
+  .headerlinks {
+    font-size: 0.96em;
+    letter-spacing: 0.01em;
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+  }
+  .headerlinks a {
+    color: #2b2b2b;
+    font-weight: 700;
+  }
+  .headerlinks a:hover {
+    color: #007155;
+  }
   h2 {
     margin-top: 0;
     margin-bottom: 18px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+    font-weight: 700;
   }
   .news-timeline {
     position: relative;
     margin: 0;
-    padding-left: 24px;
-    border-left: 2px solid rgba(0, 113, 85, 0.18);
+    padding-left: 20px;
+    border-left: 1.5px solid rgba(0, 113, 85, 0.18);
   }
   .news-item {
     position: relative;
     display: grid;
-    grid-template-columns: 128px minmax(0, 1fr);
+    grid-template-columns: 110px minmax(0, 1fr);
     gap: 18px;
-    margin-bottom: 18px;
-    padding-bottom: 14px;
+    margin: 0 0 16px;
+    padding: 0 0 0 0;
   }
   .news-item:last-child {
     margin-bottom: 0;
-    padding-bottom: 0;
   }
   .news-item::before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: -26px;
     top: 9px;
-    width: 12px;
-    height: 12px;
-    background: linear-gradient(135deg, #0e8c69, #4bb38a);
-    border: 2px solid #f7f7f7;
+    width: 9px;
+    height: 9px;
+    background: #0f7a63;
     border-radius: 50%;
-    box-shadow: 0 0 0 2px rgba(14, 140, 105, 0.12);
+    box-shadow: 0 0 0 3px rgba(15, 122, 99, 0.10);
   }
   .news-date {
-    color: #0b6a52;
+    color: #5a625f;
+    font-size: 0.82em;
     font-weight: 700;
-    font-size: 0.95em;
+    letter-spacing: 0.02em;
     line-height: 1.8;
     white-space: nowrap;
   }
   .news-content {
-    color: #2b2b2b;
-    line-height: 1.6;
+    color: #2d2d2d;
+    line-height: 1.7;
     text-align: left;
   }
   .news-content b {
     color: #1a1a1a;
   }
   .news-content i {
-    color: #303030;
+    color: #222222;
   }
   .news-content .tl-dr {
     display: block;
     margin-top: 4px;
-    margin-bottom: 4px;
-    color: #3f5b54;
-    padding-left: 0.2em;
+    margin-left: 0.15em;
+    color: #425b55;
   }
   @media (max-width: 700px) {
     .news-item {
       grid-template-columns: 1fr;
-      gap: 8px;
-      margin-bottom: 20px;
+      gap: 6px;
+      margin-bottom: 18px;
     }
     .news-timeline {
-      padding-left: 18px;
+      padding-left: 16px;
     }
     .news-item::before {
-      left: -24px;
+      left: -21px;
     }
   }
   </style>
@@ -205,7 +218,7 @@
 		  </div>
 		  <div class="news-item">
 		    <div class="news-date">Nov 2025</div>
-		    <div class="news-content"><b>Served as <b>Local Organizing Chair</b> of</b> <a href="https://www.adai.ai/dai/2025/">the 7th International Conference on Distributed Artificial Intelligence</a> (<b>DAI 2025</b>)</div>
+		    <div class="news-content"><b>Served as Local Organizing Chair of</b> <a href="https://www.adai.ai/dai/2025/">the 7th International Conference on Distributed Artificial Intelligence</a> (<b>DAI 2025</b>)</div>
 		  </div>
 		  <div class="news-item">
 		    <div class="news-date">Oct 2025</div>
